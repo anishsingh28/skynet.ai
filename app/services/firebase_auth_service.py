@@ -14,7 +14,7 @@ logger = logging.getLogger("firebase_auth")
 class FirebaseAuthService:
     def __init__(self):
         self.api_key = settings.firebase.api_key
-        print(self.api_key, "API KEY")
+        
         self.base_url = "https://identitytoolkit.googleapis.com/v1/accounts"
         self.auth_domain = settings.firebase.auth_domain
         logger.info("Firebase Auth Service initialized")

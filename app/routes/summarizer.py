@@ -1,9 +1,10 @@
 from fastapi import APIRouter, Request , File , UploadFile
 from fastapi.responses import JSONResponse
 
-
 from models.summarizer_model import Summarizermodel
 from services import summarizer_service
+
+
 
 router = APIRouter(prefix="/summarizer")
 

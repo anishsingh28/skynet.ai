@@ -53,9 +53,7 @@ async def register(user_data: UserRegistration):
         return JSONResponse(content={
             "status": "success",
             "message": "User registered successfully",
-            "user_id": user_id,
-            "id_token": result.get("idToken"),
-            "refresh_token": result.get("refreshToken")
+            "user_id": user_id
         })
     except HTTPException as e:
         return JSONResponse(
